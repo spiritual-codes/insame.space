@@ -3,13 +3,13 @@
   [headers.values]
     Cross-Origin-Embedder-Policy = '''
       (unsafe-none|require-corp);
-      report-to='default''''
+      report-to="default"'''
 
     Permissions-Policy = '''
       geolocation=(self),
       microphone=()'''
 
-    Referrer-Policy = "no-referrer-when-downgrade
+    Referrer-Policy = "no-referrer-when-downgrade"
 
     Strict-Transport-Security = '''
       max-age=63072000;
