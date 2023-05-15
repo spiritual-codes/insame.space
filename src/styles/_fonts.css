@@ -1,0 +1,10 @@
+/* Webfont: Neofolia-Regular */
+@font-face {
+    font-family: 'Neofolia';
+    src: url('Neofolia.woff') format('woff'), /* Modern Browsers */
+         url('Neofolia.woff2') format('woff2'), /* Modern Browsers */
+         url('Neofolia.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
