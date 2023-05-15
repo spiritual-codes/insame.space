@@ -1,21 +1,20 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Content-Security-Policy = "script-src 'strict-dynamic' 'nonce-Aq9rBiZag4ZK5t9YTHTyzMmKPLMzAsnf' 'unsafe-inline' https:; object-src 'none'; base-uri 'self';"
     Cross-Origin-Embedder-Policy = '''
       (unsafe-none|require-corp);
       report-to="default"'''
-
+    Cross-Origin-Opener-Policy = "(same-origin|same-origin-allow-popups|unsafe-none); report-to='default'"
+    Cross-Origin-Resource-Policy = "(same-site|same-origin|cross-origin)"
     Permissions-Policy = '''
       geolocation=(self),
       microphone=()'''
-
     Referrer-Policy = "no-referrer-when-downgrade"
-
     Strict-Transport-Security = '''
       max-age=63072000;
       includeSubDomains;
       preload'''
-
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "0"
