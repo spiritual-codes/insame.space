@@ -1,14 +1,20 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Cross-Origin-Embedder-Policy = '''
+      (unsafe-none|require-corp);
+      report-to='default''''
+
     Permissions-Policy = '''
-    geolocation=(self),
-    microphone=()'''
+      geolocation=(self),
+      microphone=()'''
+
+    Referrer-Policy = "no-referrer-when-downgrade
 
     Strict-Transport-Security = '''
-    max-age="63072000",
-    includeSubDomains
-    preload'''
+      max-age=63072000;
+      includeSubDomains;
+      preload'''
 
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
